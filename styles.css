@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact Button */
+.submit-btn {
+  background: linear-gradient(90deg, #facc15, #f472b6, #60a5fa);
+  background-size: 200% 200%;
+  transition: background-position 0.5s, transform 0.3s;
+}
+.submit-btn:hover {
+  background-position: right center;
+  transform: scale(1.05);
+}
