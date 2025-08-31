@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sotheara | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Typing Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- ================= NAVBAR ================= -->
+    <header class="bg-gray-800 sticky top-0 z-50 shadow-lg">
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-2xl font-bold text-yellow-400">Sotheara</h1>
+        <ul class="flex gap-6">
+          <li>
+            <a href="#hero" class="hover:text-yellow-400 transition">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-yellow-400 transition">About</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="hover:text-yellow-400 transition"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="hover:text-yellow-400 transition"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-yellow-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      class="min-h-screen flex flex-col md:flex-row justify-center items-center px-6 md:px-20 gap-10 bg-gradient-to-r from-blue-600 to-blue-400 rounded-b-[50px] shadow-lg"
+    >
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-5xl font-bold text-white mb-4">
+          Hi, I'm <span class="text-yellow-400">Sotheara</span><br />
+          <span id="typing" class="text-pink-400"></span>
+        </h1>
+        <p class="text-gray-200 mb-6 text-lg md:text-xl max-w-lg">
+          Beginner frontend developer learning HTML, CSS, and JavaScript.
+          Building simple projects to improve my skills step by step.
+        </p>
+        <a
+          href="#portfolio"
+          class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg hover:scale-105 transition-transform"
+        >
+          See My Work
+        </a>
+      </div>
+
+      <div class="flex-1 flex justify-center md:justify-end">
+        <div
+          class="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl border-4 border-yellow-400"
+        >
+          <img
+            src="image/og-image.jpg"
+            alt="Sotheara"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-gray-800 reveal">
+      <div class="container mx-auto px-6 max-w-3xl text-center text-white">
+        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-lg md:text-xl bg-gray-900 p-6 rounded-xl shadow-lg">
+          Hello! I'm Sotheara. I started as an English teacher but I am now
+          learning frontend development. I enjoy building small projects to
+          practice coding step by step.
+        </p>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-20 bg-gray-900 reveal">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">
+          My Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-blue-600 p-6 rounded-2xl shadow-lg transform transition hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-500 hover:to-indigo-600"
+          >
+            <h3 class="text-xl font-bold mb-2 text-white">Portfolio Website</h3>
+            <p class="text-gray-100">
+              My first project built with HTML, CSS, Tailwind.
+            </p>
+          </div>
+          <div
+            class="bg-purple-600 p-6 rounded-2xl shadow-lg transform transition hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-600"
+          >
+            <h3 class="text-xl font-bold mb-2 text-white">To-Do List App</h3>
+            <p class="text-gray-100">
+              Simple task manager built with JavaScript.
+            </p>
+          </div>
+          <div
+            class="bg-blue-500 p-6 rounded-2xl shadow-lg transform transition hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-r hover:from-blue-400 hover:to-cyan-500"
+          >
+            <h3 class="text-xl font-bold mb-2 text-white">Blog Layout</h3>
+            <p class="text-gray-100">
+              Clean blog-style page layout to practice design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section
+      id="experience"
+      class="py-20 bg-gradient-to-r from-purple-700 via-pink-600 to-red-500 text-white reveal"
+    >
+      <div class="container mx-auto px-6 max-w-3xl text-center">
+        <h2 class="text-3xl font-bold mb-6">Experience</h2>
+        <ul class="space-y-4">
+          <li
+            class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 text-black p-4 rounded-xl shadow-lg transition hover:scale-105"
+          >
+            Beginner in Web Development
+          </li>
+          <li
+            class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-black p-4 rounded-xl shadow-lg transition hover:scale-105"
+          >
+            English Teacher with Strong Communication Skills
+          </li>
+          <li
+            class="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 text-black p-4 rounded-xl shadow-lg transition hover:scale-105"
+          >
+            Learning HTML, CSS, JavaScript, and Tailwind CSS
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-[#010409] reveal">
+      <div class="container mx-auto px-6 max-w-2xl">
+        <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+        <div class="bg-[#161b22] border border-gray-800 rounded-lg p-8">
+          <div class="flex items-center mb-4">
+            <span class="h-3 w-3 bg-red-500 rounded-full mr-2"></span>
+            <span class="h-3 w-3 bg-yellow-500 rounded-full mr-2"></span>
+            <span class="h-3 w-3 bg-green-500 rounded-full"></span>
+          </div>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block mb-2 text-secondary">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full p-2 rounded-md form-input text-black"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block mb-2 text-secondary"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full p-2 rounded-md form-input text-black"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block mb-2 text-secondary"
+                >Message:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full p-2 rounded-md form-input text-black"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-2 px-4 rounded-md text-white font-bold submit-btn"
+            >
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-gray-800 py-6 text-center text-gray-300 border-t-4 border-yellow-400"
+    >
+      <p>© 2025 Sotheara. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="toTop"
+      class="fixed bottom-6 right-6 bg-yellow-400 text-black p-3 rounded-full shadow-lg hidden"
+    >
+      ⬆
+    </button>
+
+    <!-- Scripts -->
+    <script>
+      // Typing Effect
+      document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typing", {
+          strings: [
+            "Frontend Developer",
+            "English Teacher",
+            "Lifelong Learner",
+          ],
+          typeSpeed: 70,
+          backSpeed: 50,
+          loop: true,
+        });
+      });
+
+      // Reveal Animation on Scroll
+      window.addEventListener("scroll", function () {
+        document.querySelectorAll(".reveal").forEach((el) => {
+          let rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            el.classList.add("active");
+          }
+        });
+      });
+
+      // Back to Top
+      const toTop = document.getElementById("toTop");
+      window.addEventListener("scroll", () => {
+        toTop.style.display = window.scrollY > 300 ? "block" : "none";
+      });
+      toTop.addEventListener("click", () =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      );
+    </script>
+  </body>
+</html>
